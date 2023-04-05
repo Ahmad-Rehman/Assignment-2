@@ -1,1 +1,86 @@
-sdbkfbsdjkbfsdkbs
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    text-align: center;
+}
+
+.login-form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: hwb(202 23% 22%);
+    max-width: 360px;
+    margin: 0 auto 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+form>button {
+    margin: 10px;
+    padding: 4% 30%;
+    margin: 10px 0 10px ;
+    background-color: rgb(226, 57, 51);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(51, 226, 104);
+    color: black;
+ }
+form>input {
+    padding: 4%;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+}
+
+input[type=email],
+input[type=password]{
+
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    border-style: double;
+
+}
+
+form>label{
+    text-align: left;
+    font-size: larger;
+    font-family: sans-serif;
+
+}
+
+header>img{
+    width: 120px;
+}
+
+form>div {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: rgb(25, 47, 88);
+    margin-top: 0%;
+}
+
+a{
+    margin-top: 15px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
