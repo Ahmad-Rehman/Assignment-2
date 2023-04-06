@@ -2,11 +2,7 @@ function calculator(){
 let number1 = document.getElementsByName("num1")[0].value;
 let number2 = document.getElementsByName("num2")[0].value;
 
-let operator = document.getElementById("+").innerHTML
-operator = document.getElementById("-").innerHTML
-
-console.log(operator)
-
+let operator = document.getElementById("operator")[0].value
 let result;
 
 if (operator == '+') {
@@ -22,4 +18,6 @@ else {
     result = number1 / number2;
 }
 
+
+document.getElementById("result").innerHTML = result;
 }
