@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Calculator</h1>
 
-    <div class="form">  
+    <div id="calculator">
 
-        <label for="text" >Number 1</label>
-        <input type="text" name="num1"/>
-
-        <select id="operator">
-        <option id="+">+</option>
-        <option id="-">-</option>
-        <option id="*">*</option>
-        <option id="/">/</option>
-        </select>
-        
-        <label for="text">Number 2</label>
-        <input type="text" name="num2"/>
-
-        <button type="submit">submit</button>
+        <input type="text" id="result" value="" /> <br>
+        <input type="button" value="1" onclick="addResult('1')" />
+        <input type="button" value="2" onclick="addResult('2')" />
+        <input type="button" value="3" onclick="addResult('3')" />
+        <input type="button" value="+" onclick="addResult('+')" />
+        <br>
+        <input type="button" value="4" onclick="addResult('4')" />
+        <input type="button" value="5" onclick="addResult('5')" />
+        <input type="button" value="6" onclick="addResult('6')" />
+        <input type="button" value="-" onclick="addResult('-')" />
+        <br>
+        <input type="button" value="7" onclick="addResult('7')" />
+        <input type="button" value="8" onclick="addResult('8')" />
+        <input type="button" value="9" onclick="addResult('9')" />
+        <input type="button" value="*" onclick="addResult('*')" />
+        <br>
+        <input type="button" value="0" onclick="addResult('0')" />
+        <input type="button" value="C" onclick="clearResult('')"/>
+        <input type="button" value="=" onclick="calculateResult()"/>
+        <input type="button" value="/" onclick="addResult('/')" />
     </div>
-        <h4>Result: <span id="result"></span></h4>
-    <script src="/script.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 
 

@@ -1,23 +1,18 @@
-function calculator(){
-let number1 = document.getElementsByName("num1")[0].value;
-let number2 = document.getElementsByName("num2")[0].value;
+function addResult(value) {
+    document.getElementById('result').value += value;
+}
 
-let operator = document.getElementById("operator")[0].value
-let result;
+function clearResult() {
+    document.getElementById('result').value = '';
+}
 
-if (operator == '+') {
-        result = number1 + number2;
-}
-else if (operator == '-') {
-    result = number1 - number2;
-}
-else if (operator == '*') {
-    result = number1 * number2;
-}
-else {
-    result = number1 / number2;
+function calculateResult() {
+    let expresion = document.getElementById('result').value
+    if (expresion) {
+        result = eval(document.getElementById('result').value);
+        document.getElementById('result').value = result;
+    }
 }
 
 
-document.getElementById("result").innerHTML = result;
-}
+
