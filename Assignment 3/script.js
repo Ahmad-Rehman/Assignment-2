@@ -1,5 +1,9 @@
-function addResult(value) {
-    document.getElementById('result').value += value;
+ 
+ function addResult(value) {
+    let expresion = document.getElementById('result').value
+    let length = expresion.length-1
+    if (expresion[length] !== "+" && expresion[length] !== "-" && expresion[length] !== "*" && expresion[length] !== "/" || typeof value === "number")
+        document.getElementById('result').value += value;
 }
 
 function clearResult() {
@@ -13,6 +17,7 @@ function calculateResult() {
         document.getElementById('result').value = result;
     }
 }
+
 
 
 

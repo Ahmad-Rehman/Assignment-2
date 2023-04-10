@@ -9,27 +9,29 @@
 <body>
 
     <div id="calculator">
+        <h1>CALCULATOR</h1>
 
         <input readonly id="result" value="" /> <br>
-        <input type="button" class="btn" value="1" onclick="addResult('1')" />
-        <input type="button" class="btn" value="2" onclick="addResult('2')" />
-        <input type="button" class="btn" value="3" onclick="addResult('3')" />
+        <input type="button" class="btn" value="1" onclick="addResult(1)" />
+        <input type="button" class="btn" value="2" onclick="addResult(2)" />
+        <input type="button" class="btn" value="3" onclick="addResult(3)" />
         <input type="button" class="btn" value="+" onclick="addResult('+')" />
         <br>
-        <input type="button" class="btn" value="4" onclick="addResult('4')" />
-        <input type="button" class="btn" value="5" onclick="addResult('5')" />
-        <input type="button" class="btn" value="6" onclick="addResult('6')" />
+        <input type="button" class="btn" value="4" onclick="addResult(4)" />
+        <input type="button" class="btn" value="5" onclick="addResult(5)" />
+        <input type="button" class="btn" value="6" onclick="addResult(6)" />
         <input type="button" class="btn" value="-" onclick="addResult('-')" />
         <br>
-        <input type="button" class="btn" value="7" onclick="addResult('7')" />
-        <input type="button" class="btn" value="8" onclick="addResult('8')" />
-        <input type="button" class="btn" value="9" onclick="addResult('9')" />
+        <input type="button" class="btn" value="7" onclick="addResult(7)" />
+        <input type="button" class="btn" value="8" onclick="addResult(8)" />
+        <input type="button" class="btn" value="9" onclick="addResult(9)" />
         <input type="button" class="btn" value="*" onclick="addResult('*')" />
         <br>
-        <input type="button" class="btn" value="0" onclick="addResult('0')" />
+        <input type="button" class="btn" value="0" onclick="addResult(0)" />
         <input type="button" class="btn" value="C" onclick="clearResult('')" />
-        <input type="button" class="btn" value="=" onclick="calculateResult()" />
         <input type="button" class="btn" value="/" onclick="addResult('/')" />
+        <input type="button" class="btn" value="=" onclick="calculateResult()" />
+       
     </div>
 
     <script src="script.js"></script>
